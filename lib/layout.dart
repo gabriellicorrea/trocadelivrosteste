@@ -2,7 +2,7 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 
 class Layout {
-  static Widget render(Widget content, [String title = 'Delivery App']) {
+  static Widget render(Widget content, [String title = 'Troca']) {
     return Scaffold(
       appBar: AppBar(
         title: Text(title),
