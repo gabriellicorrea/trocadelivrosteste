@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "774967303982",
+    "firebase_url": "https://trocadelivros2-3b0e7.firebaseio.com",
+    "project_id": "trocadelivros2-3b0e7",
+    "storage_bucket": "trocadelivros2-3b0e7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:774967303982:android:ae1ec9519b61d7b11524bf",
+        "android_client_info": {
+          "package_name": "com.example.trocadelivros2"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "774967303982-m5ns3jbspbmick9kg1pnn75t5abriccu.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.trocadelivros2",
+            "certificate_hash": "796b59d0a77a167a16deb603d9603d850ba8eda2"
+          }
+        },
+        {
+          "client_id": "774967303982-vb6g7p4ur3divouo2i49givu8nv63pgq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA6xQiKvMu6ZPrZCKKKVlM4hMOmv0pEcIk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "774967303982-vb6g7p4ur3divouo2i49givu8nv63pgq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
