@@ -1,9 +1,6 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
-
+import 'package:trocadelivros2/layout.dart';
 import 'package:flutter/material.dart';
-import 'package:trocadelivros2/login.dart';
-
-import 'layout.dart';
 
 //import 'package:trocadelivros2/login.dart';
 
@@ -52,8 +49,7 @@ class _MyHomePageState extends State<MyHomePage> {
                     snapshot.data.documents.map<Widget>((DocumentSnapshot doc) {
                   return ListTile(
                     leading: Icon(Icons.people, size: 52),
-                    title: Text(
-                        "${doc.data['nome']} - ${doc.data['idade'].toString()} anos"),
+                    title: Text(doc.data['nome'] + "-" + doc.data['idade']),
                     subtitle: Text(doc.data['telefone']),
                   );
                 }).toList(),

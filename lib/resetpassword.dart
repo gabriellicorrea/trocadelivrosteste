@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:trocadelivros2/cadastro.dart';
+import 'package:trocadelivros2/login.dart';
 
 class ResetPasswordPage extends StatelessWidget {
   @override
@@ -8,10 +10,17 @@ class ResetPasswordPage extends StatelessWidget {
         backgroundColor: Colors.white,
         automaticallyImplyLeading: true,
         leading: IconButton(
-          icon: Icon(Icons.home),
-          color: Colors.black38,
-          onPressed: () => Navigator.pop(context, false),
-        ),
+            icon: Icon(Icons.home),
+            color: Colors.black38,
+            onPressed: () {
+              print("tela de login".toUpperCase());
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => Cadastro(),
+                ),
+              );
+            }),
       ),
       body: Container(
         padding: EdgeInsets.only(top: 50, left: 40, right: 40),

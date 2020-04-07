@@ -1,11 +1,29 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
+import 'package:trocadelivros2/cadastro.dart';
+import 'package:trocadelivros2/login.dart';
 
 class Layout {
+  static BuildContext get context => null;
+
   static Widget render(Widget content, [String title = 'Troca']) {
     return Scaffold(
       appBar: AppBar(
         title: Text(title),
+        backgroundColor: Colors.white,
+        leading: IconButton(
+          icon: Icon(Icons.home),
+          color: Colors.black38,
+          onPressed: () {
+            print("tela de login".toUpperCase());
+            Navigator.push(
+              context,
+              MaterialPageRoute(
+                builder: (context) => Cadastro(),
+              ),
+            );
+          },
+        ),
       ),
       body: content,
       // floatingActionButton: FloatingActionButton(
